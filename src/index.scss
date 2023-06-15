@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
+.planner  {
+  &__title {
+    color: red;
+  }
+}
