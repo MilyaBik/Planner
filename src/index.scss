@@ -3,7 +3,16 @@
 }
 
 .planner  {
-  &__title {
-    color: red;
+  margin: 0 auto;
+  height: 100vh;
+  width: 1000px;
+  color: #fff;
+  &__front {
+    display: flex;
+    flex-direction: column;
+  }
+  &__back {
+    display: none;
   }
 }
+

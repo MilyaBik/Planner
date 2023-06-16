@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-export default function Inform() {
+import bg from '../../images/bg.jpg';
+
+import './InformTop.scss';
+
+export default function InformTop() {
   return (
-    <div className='inform'>
+    <div className='inform' style={{backgroundImage: `url(${bg})`}}>
         <div className='hamburger'>
             <span></span>
             <span></span>
