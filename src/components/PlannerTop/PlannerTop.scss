@@ -1,0 +1,56 @@
+.inform {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    flex: 1;
+    flex-basis: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+ 
+    & .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 25px;
+        width: 40px;
+        & span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: #baaecd;
+        }
+    }
+
+    &__title {
+        font-size: 35px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__numbers {
+        display: flex;
+        gap: 30px;
+        &-item {
+            text-align: end;
+            & .number {
+                font-size: 25px;
+            }
+            & .name {
+                margin-bottom: 0;
+                color: #bdbdbd;
+                font-size: 18px;
+            }
+        }
+    }
+
+    &__date {
+        font-size: 20px;
+        color: #bdbdbd;
+    }
+}

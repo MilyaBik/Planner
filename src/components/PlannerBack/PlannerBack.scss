@@ -1,0 +1,70 @@
+
+.add-block {
+    padding: 40px;
+    background-color: #755D9A;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    &__title {
+        color: #ede8e8;
+        font-size: 30px;
+        text-align: center;
+    }
+    &__top {
+        position: relative;
+        margin-bottom: 40px;
+    }
+    &__icon {
+        position: absolute;
+    }
+    &__icons-main {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+    &__form {
+        &-item {
+            margin-bottom: 25px;
+            & select {
+                width: 100%;
+                background-color: #755D9A;
+                border: none;
+                border-bottom: 1px solid #a9a9a9;
+                color: #fff;
+                padding: 15px 25px;
+            }
+            & input {
+                width: 100%;
+                background-color: #755D9A;
+                border: none;
+                border-bottom: 1px solid #a9a9a9;
+                color: #fff;
+                padding: 15px 25px;
+                    &::placeholder {
+                        color: #fff;
+                    } 
+                    &[type="time"] {
+                        z-index: 0;
+                        position: relative;
+                    }
+                    &[type="time"]::-webkit-calendar-picker-indicator {
+                        background: none;
+                    }
+            }
+            
+        }
+        & button {
+            margin: 0 auto;
+            display: block;
+            padding: 11px 40px;
+            border: none;
+            color: #fff;
+            background-color: #64a796;
+        }
+        &-inner {
+            margin-bottom: 40px;
+        }
+    }
+}

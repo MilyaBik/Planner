@@ -1,27 +1,30 @@
 import React from 'react';
 
-import bg from '../../images/bg.jpg';
+import bg from '../../assets/images/bg.jpg';
 
-import './InformTop.scss';
+import './PlannerTop.scss';
 
-export default function InformTop() {
+export default function PlannerTop({onClickBlock}) {
+
+
+   
   return (
-    <div className='inform' style={{backgroundImage: `url(${bg})`}}>
-        <div className='hamburger'>
+    <div className='inform ' style={{backgroundImage: `url(${bg})`}}>
+        <div className='hamburger' onClick = {onClickBlock}>
             <span></span>
             <span></span>
             <span></span>
         </div>
         <div className='inform__inner'>
-            <div className='inform__title'>Your Things</div>
+            <div className='inform__title'>Мои планы</div>
             <div className="inform__numbers">
                 <div className="inform__numbers-item">
                     <span className='number'>24</span>
-                    <span className='name'>Personal</span>
+                    <p className='name'>Личные</p>
                 </div>
                 <div className="inform__numbers-item">
                     <span className='number'>15</span>
-                    <span className='name'>Business</span>
+                    <p className='name'>По работе</p>
                 </div>
             </div>
         </div>

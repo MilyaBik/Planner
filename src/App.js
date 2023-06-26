@@ -1,22 +1,29 @@
+import React, { useState } from 'react';
+
 import './App.scss';
-import InformTop from './components/Inform';
 import Container from 'react-bootstrap/Container';
 
+import PlannerTop from './components/PlannerTop';
+import PlannerBottom from './components/PlannerBottom';
+import PlannerBack from './components/PlannerBack';
+
 function App() {
+
+  const [visibleBack, setVisibleBack] = useState(false);
+  const  onClickBlock = () => setVisibleBack(!visibleBack);
+
+  
   return (
     <Container>
       <div className='planner'>
 
         <div className='planner__front'>
-          <InformTop />
-          <div className='planner__bottom'>
-
+          <PlannerTop onClickBlock={onClickBlock}/>
+          <PlannerBottom/>
         </div>
-        </div>
-        <div className='planner__back'>
-
-
-        </div>
+        {visibleBack && (
+        <PlannerBack onClickBlock={onClickBlock}/>
+        )}
       </div>
     </Container>
   );
